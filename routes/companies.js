@@ -2,7 +2,7 @@
 
 const express = require("express");
 const ExpressError = require("../expressError");
-const router = express.Router();
+let router = new express.Router();
 const db = require("../db");
 
 // Return list of companies
