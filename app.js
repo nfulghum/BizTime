@@ -3,6 +3,7 @@ const express = require("express");
 const ExpressError = require("./expressError");
 const cRoutes = require("./routes/companies");
 const iRoutes = require("./routes/invoices");
+const indRoutes = require("./routes/industries");
 
 
 const app = express();
@@ -10,6 +11,7 @@ const app = express();
 app.use(express.json());
 app.use("/companies", cRoutes);
 app.use("/invoices", iRoutes);
+app.use("/industries", indRoutes);
 
 
 
